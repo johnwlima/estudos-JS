@@ -1,42 +1,40 @@
-// definir variaveis
-
+// Definir variáveis
 var lunch = 17;
 var pass = 4.50;
 var calcDayPass = pass * 2;
 
-//definir quantidade de dias
-var days = window.prompt("Quantos dias foram trabalhado no escritório");
+// Definir quantidade de dias
+var days = window.prompt("Quantos dias foram trabalhados no escritório");
 var daysPass = pass * days;
-var daysLunch =  lunch * days;
+var daysLunch = lunch * days;
 
-//calculo resultado
-var result = (calcDayPass + lunch)*days;
+// Calcular resultado
+var result = (calcDayPass + lunch) * days;
 
+// Converter para a moeda e armazenar nas variáveis
+var daysLunchFormatted = daysLunch.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+var daysPassFormatted = daysPass.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+var resultFormatted = result.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-//lista com os id do funcionário
-
-funcionario = {
-    nome: "valéria",
-    banco: "Nubank",
-    metodo_de_pagamento: "pix",
-    numero_da_conta: "email@email"
+// Lista com os dados do funcionário
+var funcionario = {
+  nome: "Valéria",
+  banco: "Nubank",
+  metodo_de_pagamento: "PIX",
+  numero_da_conta: "email@email"
 };
 
-
-//impressão na tela
-
-//informações separadas
+// Impressão na tela
 document.writeln(`<strong>TOTAL AJUDA DE CUSTO</strong><br>`);
 document.writeln('--------------------------------------------<br>');
-document.writeln(`Dias trabalhados no escritório <strong>${days}</strong><br>`);
-document.writeln(`Valor em almoço gasto foi de <strong>R$ ${daysLunch}</strong><br>`);
-document.writeln(`Valor em passagem gasto foi de <strong>R$ ${daysPass}</strong><br>`);
-
-//informações do usuário
+document.writeln(`Dias trabalhados no escritório: <strong>${days}</strong><br>`);
+document.writeln(`Valor gasto em almoço: <strong>${daysLunchFormatted}</strong><br>`);
+document.writeln(`Valor gasto em passagem: <strong>${daysPassFormatted}</strong><br>`);
 document.writeln('--------------------------------------------<br>');
-document.write(funcionario + "<br>");
-
-//resultado
+document.writeln(`Nome do funcionário: <strong>${funcionario.nome}</strong><br>`);
+document.writeln(`Banco: <strong>${funcionario.banco}</strong><br>`);
+document.writeln(`Método de pagamento: <strong>${funcionario.metodo_de_pagamento}</strong><br>`);
+document.writeln(`Número da conta: <strong>${funcionario.numero_da_conta}</strong><br>`);
 document.writeln('--------------------------------------------<br>');
-document.writeln(`Dias trabalhados no escritório <strong> ${days}</strong><br>`);
-document.writeln(`Total é <strong>R$ ${result}</strong><br>`);
+document.writeln(`Dias trabalhados no escritório: <strong>${days}</strong><br>`);
+document.writeln(`Total: <strong>${resultFormatted}</strong><br>`);
