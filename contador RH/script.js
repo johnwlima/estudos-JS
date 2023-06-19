@@ -25,7 +25,7 @@ funcionario = {
 
 //impressão na tela
 
-document.writeln(`TOTAL AJUDA DE CUSTO <br>`);
+document.writeln(`<strong>TOTAL AJUDA DE CUSTO</strong><br>`);
 document.writeln('--------------------------------------------<br>')
 document.writeln(`Dias trabalhados no escritório <strong>R$ ${days}</strong><br>`)
 document.writeln(`Valor em almoço gasto foi de <strong>R$ ${daysLunch}</strong><br>`);
