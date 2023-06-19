@@ -20,19 +20,23 @@ funcionario = {
     banco: "Nubank",
     metodo_de_pagamento: "pix",
     numero_da_conta: "email@email"
-}
+};
 
 
 //impressão na tela
 
+//informações separadas
 document.writeln(`<strong>TOTAL AJUDA DE CUSTO</strong><br>`);
-document.writeln('--------------------------------------------<br>')
-document.writeln(`Dias trabalhados no escritório <strong>R$ ${days}</strong><br>`)
+document.writeln('--------------------------------------------<br>');
+document.writeln(`Dias trabalhados no escritório <strong>${days}</strong><br>`);
 document.writeln(`Valor em almoço gasto foi de <strong>R$ ${daysLunch}</strong><br>`);
 document.writeln(`Valor em passagem gasto foi de <strong>R$ ${daysPass}</strong><br>`);
 
-document.writeln('--------------------------------------------<br>')
-document.writeln(`Dias trabalhados no escritório <strong>R$ ${days}</strong><br>`)
+//informações do usuário
+document.writeln('--------------------------------------------<br>');
+document.write(funcionario + "<br>");
 
-
-document.writeln(`o total é <strong>R$ ${result}</strong><br>`)
+//resultado
+document.writeln('--------------------------------------------<br>');
+document.writeln(`Dias trabalhados no escritório <strong> ${days}</strong><br>`);
+document.writeln(`Total é <strong>R$ ${result}</strong><br>`);
