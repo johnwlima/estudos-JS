@@ -1,0 +1,1 @@
+//variáveis 3 tipos: var, let e const
