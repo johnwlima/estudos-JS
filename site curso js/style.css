@@ -1,1 +1,10 @@
 
+function areaRetangulo (a, b){
+
+}
+
+function HelloWorld(){
+    console.log ('Hello world no console')
+}
+
+HelloWorld();
